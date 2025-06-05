@@ -18,7 +18,7 @@ La aplicación consume datos desde una **API pública** y los muestra de forma d
 ![alt text](./assest/maq.png)
 
 
-- [Haga click aquì para ver la maquetaciòn funcional]()
+- [Haga click aquì para ver la maquetaciòn funcional](https://sites.google.com/view/api-de-minecraft/p%C3%A1gina-principal)
 ---
 
 ---
