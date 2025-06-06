@@ -1,0 +1,59 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 140vh;
+    background-image: url("../assest/imgfond.jpg");
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;  
+    animation: fadeInBackground 2s ease-in-out forwards;
+}
+
+@keyframes fadeInBackground {
+    from {
+        transform: scale(1.8);
+        opacity: 0.2;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+nav {
+    position: fixed; 
+    padding: 20px 30px;
+    top: 0;
+    left: 0;
+    width: 140%;
+    background-color: rgba(0, 0, 0, 0.616); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size:17px;
+  }
+  
+  .menu li a:hover {
+    color: #ffcc00; 
+  }
+  
+ 
