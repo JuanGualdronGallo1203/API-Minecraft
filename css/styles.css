@@ -55,5 +55,26 @@ nav {
   .menu li a:hover {
     color: #ffcc00; 
   }
+
+.filtro{
+    position: relative;
+}
+
+.filtro-pal{
+    cursor: pointer;
+}
+
+.filtro-menu{
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    padding: 10px 0;
+    min-width: 150px;
+    list-style: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
   
  
