@@ -35,7 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    gap: 2px;
 }
 
 .menu {
@@ -59,18 +59,18 @@ nav {
 .dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #3d3636ee;
-    min-width: 160px;
+    max-width: 150px;
     padding: 16px 30px;
     z-index: 1;
     color: white;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
