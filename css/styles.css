@@ -17,17 +17,15 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: fadeInBackground 2s ease-in-out forwards;
+    animation: fadeInBackgro 2s ease-in-out forwards;
 }
 
-@keyframes fadeInBackground {
-    from {  
-        background-size: 160vw;
+@keyframes fadeInBackgro {
+    from {
         transform: scale(1.5);
         opacity: 0.2;
     }
     to {
-        background-size: 100vw;
         transform: scale(1);
         opacity: 1;
     }
@@ -39,67 +37,106 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../assets/imgfond.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: -1;
-
-
-    opacity: 0.2;
-    animation: fadeIn 3.5s ease-in forwards;
+    opacity: 0;
+    animation: fadeInBackground 3s ease-in-out forwards;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInBackground {
     from { opacity: 0.2; }
     to { opacity: 1; }
 }
+
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 30px;
-    background-color: rgba(0, 0, 0, 0.616);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 15px 30px;
+    z-index: 1;
 }
 
 .menu {
-    list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
 }
 
 .menu li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 600;
     font-size: 17px;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background 0.3s ease;
+    display: block;
+    border-radius: 4px;
 }
 
 .menu li a:hover {
     color: #ffcc00;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #3d3636ee;
-    max-width: 150px;
-    padding: 16px 30px;
+    top: 100%;
+    left: 0;
+    background-color: #222; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
+    border-radius: 6px;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.dropdown-content a {
     color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 15px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffcc00;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 750px) {
+    nav {
+        padding: 10px;
+    }
+
+    .menu li:first-child {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu li a {
+        font-size: 14px;
+    }
 }
