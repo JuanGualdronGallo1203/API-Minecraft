@@ -3,105 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API-Minecraft</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <script src="./js/main.js"></script>
-    <section id="initial-page">
-        <div class="background-overlay"></div>
+    <section id="barra-nav">
         <nav>
             <ul class="menu">
-                <li><a href="#home">Página Principal</a></li>
-                <li><a href="#worlds">Mundos</a></li>
-                <div class="dropdown">
-                    <li>
-                        <a href="#items" class="filtro-pal">Items ▼</a>
-                        <div class="dropdown-content">
-                            <ul>
-                                <a href="#"><li>Armas</li></a>
-                                <a href="#"><li>Armaduras</li></a>
-                                <a href="#"><li>Alimentos</li></a>
-                                <a href="#"><li>Flechas</li></a>
-                                <a href="#"><li>Herramientas</li></a>
-                                <a href="#"><li>Materiales</li></a>
-                                <a href="#"><li>Decoraciones</li></a>
-                                <a href="#"><li>Transporte</li></a>
-                                <a href="#"><li>Pociones</li></a>
-                                <a href="#"><li>Generadores</li></a>
-                                <a href="#"><li>Archivos</li></a>
-                            </ul> 
-                        </div>
-                    </li>
-                </div>
+                <li><a href="#initial-page">Página Principal</a></li>
+                <li><a href="#worlds" id="mundos-boton">Mundos</a></li>
+                <li><a href="#items">Items</a></li>
                 <li><a href="#mods">Mods</a></li>
                 <li><a href="#mobs">Mobs</a></li>
-                <div class="dropdown">
-                    <li>
-                        <a href="#biomes">Biomas ▼</a>
-                        <div class="dropdown-content">
-                            <ul>
-                                <a href="#"><li>Overworld</li></a>
-                                <a href="#"><li>Nether</li></a>
-                                <a href="#"><li>End</li></a>
-                            </ul>
-                        </div>
-                    </li>
-                </div>
+                <li><a href="#biomes">Biomas</a></li>
             </ul>
         </nav>
     </section>
-    <section id="mundos">
-        <mi-menu></mi-menu>
-        
+    <section class="pagina1"  id="initial-page">
+        <div class="background-overlay">
+            <div class="img-contenedor">
+                <img src="./assest/imgfond.jpg" alt="img de fondo">
+            </div>
+        </div>
     </section>
-    <!-- <section id="armas">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="armaduras">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="alimentos">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="flechas">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="herramientas">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="materiales">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="decoraciones">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="transporte">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="pociones">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="generadores">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="archivos">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="mods">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="mobs">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="overworld">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="nether">
-        <mi-menu></mi-menu>
-    </section>
-    <section id="end">
-        <mi-menu></mi-menu>
-    </section> -->
+
+
+
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

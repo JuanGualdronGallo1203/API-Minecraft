@@ -4,21 +4,20 @@
     box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
+.img-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; 
 }
 
-body {
-    margin: 0;
-    background-image: url("../assest/imgfond.jpg"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: fadeInBackgro 2s ease-in-out forwards;
+.img-contenedor img {
+    max-width: 100%;
+    height: 100vh;
+    animation: fadeInBackgro 2s ease-in-out forwards;   
 }
+
 
 @keyframes fadeInBackgro {
     from {
@@ -87,37 +86,6 @@ nav {
     color: #ffcc00;
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #222; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-    border-radius: 6px;
-    animation: fadeIn 0.2s ease-in-out;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 10px 20px;
-    display: block;
-    font-size: 15px;
-    transition: background 0.3s ease, color 0.3s ease;
-    list-style: none;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffcc00;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 750px) {
