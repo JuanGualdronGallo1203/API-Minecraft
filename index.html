@@ -1,144 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API-Minecraft</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto</title>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <section id="barra-nav">
+
+    <!-- Barra de Navegación -->
+    <header>
         <nav>
             <ul class="menu">
                 <li><a href="#initial-page">Página Principal</a></li>
-                <li><a href="#worlds" id="mundos-boton">Mundos</a></li>
+                <li><a href="#worlds">Mundos</a></li>
                 <li><a href="#items">Items</a></li>
                 <li><a href="#mods">Mods</a></li>
                 <li><a href="#mobs">Mobs</a></li>
                 <li><a href="#biomes">Biomas</a></li>
             </ul>
         </nav>
-    </section>
-    <main class="content-container">
-        <divid="content" class="pages">
-            <section class="pagina1" id="initial-page">
-                <div class="background-overlay">
-                    <div class="img-contenedor">
-                        <img src="./assest/imgfond.jpg" alt="img de fondo">
-                    </div>
-                </div>
-            </section>
-            <section class="pagina2" id="world-page">
-                <div class="card-container">
-                    <div class="flip-card" id="miTarjeta">
-                        <!-- Cara frontal -->
-                        <div class="card-front">
-                            <img src="" alt="Imagen del mob" id="mobImage" />
-                            <div class="card-body">
-                                <h2 class="card-title" id="mobName"></h2>
-                                <p class="card-text" id="mobType"></p>
-                                <button onclick="toggleFlip()">Ver detalles</button>
-                            </div>
-                        </div>
-                        <!-- Cara trasera -->
-                        <div class="card-back">
-                            <div class="card-body">
-                                <h2>Detalles del Mob</h2>
-                                <p id="mobDescription"></p>
-                                <p>Vida: <span id="mobHealth"></span></p>
-                                <button onclick="toggleFlip()">Volver</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-                <aside id="mobs">
-                    <h2>Mobs Pasivos</h2>
-                    <div id="mob-cards-container"></div>
-                </aside>
-            </section>
-        </div>
+    </header>
+
+    <!-- Contenido de las Secciones -->
+    <main>
+        <section id="initial-page">
+            <h1>Página Principal</h1>
+            <p>¡Bienvenido a mi sitio web! Usa el menú para navegar.</p>
+        </section>
+
+        <section id="worlds">
+            <h2>Mundos</h2>
+            <p>Descubre los diferentes mundos disponibles.</p>
+        </section>
+
+        <section id="items">
+            <h2>Items</h2>
+            <p>Explora los items que puedes encontrar.</p>
+        </section>
+
+        <section id="mods">
+            <h2>Mods</h2>
+            <p>Aprende sobre los mods disponibles para tu juego.</p>
+        </section>
+
+        <section id="mobs">
+            <h2>Mobs</h2>
+            <p>Conoce a los personajes y criaturas del mundo.</p>
+        </section>
+
+        <section id="biomes">
+            <h2>Biomas</h2>
+            <p>Descubre los distintos biomas del entorno.</p>
+        </section>
     </main>
-
-
-
 
     <script src="./js/main.js"></script>
 </body>
