@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API-Minecraft</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <section id="barra-nav">
         <nav>
@@ -19,17 +21,126 @@
             </ul>
         </nav>
     </section>
-    <section class="pagina1"  id="initial-page">
-        <div class="background-overlay">
-            <div class="img-contenedor">
-                <img src="./assest/imgfond.jpg" alt="img de fondo">
-            </div>
+    <main class="content-container">
+        <divid="content" class="pages">
+            <section class="pagina1" id="initial-page">
+                <div class="background-overlay">
+                    <div class="img-contenedor">
+                        <img src="./assest/imgfond.jpg" alt="img de fondo">
+                    </div>
+                </div>
+            </section>
+            <section class="pagina2" id="world-page">
+                <div class="card-container">
+                    <div class="flip-card" id="miTarjeta">
+                        <!-- Cara frontal -->
+                        <div class="card-front">
+                            <img src="" alt="Imagen del mob" id="mobImage" />
+                            <div class="card-body">
+                                <h2 class="card-title" id="mobName"></h2>
+                                <p class="card-text" id="mobType"></p>
+                                <button onclick="toggleFlip()">Ver detalles</button>
+                            </div>
+                        </div>
+                        <!-- Cara trasera -->
+                        <div class="card-back">
+                            <div class="card-body">
+                                <h2>Detalles del Mob</h2>
+                                <p id="mobDescription"></p>
+                                <p>Vida: <span id="mobHealth"></span></p>
+                                <button onclick="toggleFlip()">Volver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+                <aside id="mobs">
+                    <h2>Mobs Pasivos</h2>
+                    <div id="mob-cards-container"></div>
+                </aside>
+            </section>
         </div>
-    </section>
+    </main>
 
 
 
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>

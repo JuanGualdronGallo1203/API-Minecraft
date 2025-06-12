@@ -13,7 +13,7 @@
 }
 
 .img-contenedor img {
-    max-width: 100%;
+    width: auto;
     height: 100vh;
     animation: fadeInBackgro 2s ease-in-out forwards;   
 }
@@ -108,4 +108,116 @@ nav {
     .menu li a {
         font-size: 14px;
     }
+}
+
+/*pagina mundos*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flip-card {
+    position: relative;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.flip-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-front {
+    background-color: white;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color: #f0f0f0;
+}
+
+.flip-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+#mob-cards-container {
+    display: none; /* Oculta inicialmente */
+}
+
+.template {
+    display: none;
+}
+
+.template.active {
+    display: block;
+}
+
+#content-container {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.pages {
+    position: relative;
+    width: 100%;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.page.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
