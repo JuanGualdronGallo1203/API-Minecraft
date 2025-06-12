@@ -11,34 +11,84 @@
 <body>
 
     <!-- Barra de Navegación -->
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#initial-page">Página Principal</a></li>
-                <li><a href="#worlds">Mundos</a></li>
-                <li><a href="#items">Items</a></li>
-                <li><a href="#mods">Mods</a></li>
-                <li><a href="#mobs">Mobs</a></li>
-                <li><a href="#biomes">Biomas</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#initial-page">Página Principal</a></li>
+            <li><a href="#worlds">Mundos</a></li>
+            <li><a href="#items">Items</a></li>
+            <li><a href="#mods">Mods</a></li>
+            <li><a href="#mobs">Mobs</a></li>
+            <li><a href="#biomes">Biomas</a></li>
+        </ul>
+    </nav>
 
     <!-- Contenido de las Secciones -->
     <main>
-        <section id="initial-page">
-            <h1>Página Principal</h1>
-            <p>¡Bienvenido a mi sitio web! Usa el menú para navegar.</p>
-        </section>
 
-        <section id="worlds">
-            <h2>Mundos</h2>
-            <p>Descubre los diferentes mundos disponibles.</p>
+
+        <section id="initial-page">
+            <div class="background-overlay ">
+                <div class="img-contenedor">
+                    <img src="./assest/imgfond.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <hr>
+        <h1>Mundos</h1>
+        <hr>
+        <section>
+            <div class="world-container">
+                <!-- Primera fila: Imagen + Texto -->
+                <div class="row">
+                    <div class="column image-column">
+                        <img src="./assest/overworld.png" alt="Overworld" class="world-image">
+                    </div>
+                    <div class="column text-column" id="worlds">
+                        <h2 class="world-title">Overworld</h2>
+                        <p class="world-description">
+                            El Overworld, también conocido como Supramundo, es el mundo principal o superficie de un
+                            planeta dentro de un videojuego, generalmente el mundo en el que el personaje principal pasa
+                            la mayor parte de su tiempo. En juegos como Minecraft, es la dimensión principal y la que se
+                            crea inicialmente al comenzar una partida.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Segunda fila: Imagen + Texto -->
+                <div class="row">
+                    <div class="column text-column">
+                        <h2 class="world-title">Nether</h2>
+                        <p class="world-description">
+                            El Nether en Minecraft es una dimensión infernal, una alternativa a la superficie, con un
+                            paisaje de lava, fuego y hongos. Se puede acceder a él a través de portales hechos de
+                            obsidiana y alberga diversas criaturas hostiles, estructuras únicas y recursos raros.
+                        </p>
+                    </div>
+                    <div class="column image-column">
+                        <img src="./assest/nether.png" alt="Nether" class="world-image">
+                    </div>
+                </div>
+
+                <!-- Tercera fila: Imagen + Texto -->
+                <div class="row">
+                    <div class="column image-column">
+                        <img src="./assest/end.png" alt="End" class="world-image">
+                    </div>
+                    <div class="column text-column">
+                        <h2 class="world-title">End</h2>
+                        <p class="world-description">
+                            En Minecraft, "el End" se refiere a la dimensión final del juego, un lugar de misterio,
+                            peligro y recompensas. Es una dimensión de islas flotantes en el vacío, habitada por
+                            endermans y otras criaturas, donde se encuentra el jefe final, el Enderdragón.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="items">
             <h2>Items</h2>
-            <p>Explora los items que puedes encontrar.</p>
+            <p>Explora los items que puedes encontrar en el juego.</p>
         </section>
 
         <section id="mods">
@@ -57,6 +107,7 @@
         </section>
     </main>
 
+    <!-- <script src="./js/main.js"></script> -->
     <script src="./js/main.js"></script>
 </body>
 
