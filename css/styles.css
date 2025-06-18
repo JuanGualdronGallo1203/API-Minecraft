@@ -429,15 +429,15 @@ hr-items {
 /* Biome Card Styles */
 
 #biomas{
-    margin-top: 8vw;
+    margin-top: 70vw;
 }
 
 .biome-card {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.945);
     border-radius: 6px;
     padding: 15px;
     margin: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
     transition: transform 0.3s ease;
 }
 
