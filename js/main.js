@@ -143,7 +143,3 @@ async function loadBiomesFromJSON() {
   }
 }
 
-// Llamar a la función cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
-  loadBiomesFromJSON();
-});
