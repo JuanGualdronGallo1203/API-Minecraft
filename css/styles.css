@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 nav {
@@ -123,7 +122,6 @@ body {
 /* Estilo base para todas las secciones */
 section {
     scroll-margin-top: 80px;
-
     animation: fadeIn 1s forwards;
     height: 100vh;
     display: flex;
@@ -219,7 +217,7 @@ hr-items {
 }
 
 .espacio-page {
-    margin-top: 26vw;
+    margin-top: 29vw;
 }
 
 /* --- SECCIÓN ITEMS --- */
@@ -229,7 +227,7 @@ hr-items {
     gap: 20px;
     padding: 20px;
     background-color: #333333de;
-    height: 250vh;
+    height: 240vh;
 }
 
 .item-column {
@@ -241,6 +239,11 @@ hr-items {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.123);
     border-radius: 6px;
     padding: 10px;
@@ -295,7 +298,7 @@ hr-items {
     flex-direction: column;
     gap: 40px;
     padding: 2rem;
-    margin-top: 172vw;
+    margin-top: 195vw;
 }
 
 .row {
@@ -358,4 +361,105 @@ hr-items {
 @keyframes aumentarColorTarjeta {
     0% {background-color: rgba(255, 255, 255, 0.801);}
     100% {background-color: #a0b9d3;}
+}
+
+#mobs {
+    padding: 40px 20px;
+    margin-top: 60vw;
+}
+
+#mobs h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #000bff;
+}
+
+.mobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2vw;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 110vw;   
+}
+
+
+.mob-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 15px);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.mob-card:hover {
+    transform: scale(1.05);
+}
+
+.mob-card h3 {
+    color: #000bff;
+    margin-bottom: 10px;
+}
+
+.mob-card p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .mob-card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 600px) {
+    .mob-card {
+        width: 100%;
+    }
+}
+
+.hr-mobs{
+    margin-top: 200vw;
+}
+
+/* Biome Card Styles */
+
+#biomas{
+    margin-top: 8vw;
+}
+
+.biome-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.biome-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.biome-card h3 {
+    font-size: 24px;
+    color: #0000ff;
+    margin-bottom: 15px;
+}
+
+.biome-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.hr-biomas{
+    margin-top: 175vw;
 }

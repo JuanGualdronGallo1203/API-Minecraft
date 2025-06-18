@@ -45,3 +45,96 @@ document.addEventListener("DOMContentLoaded", () => {
   highlightActiveLink(); // Ejecutar al cargar
   window.scrollTo(0, 0);  // Forzar scroll al inicio
 });
+
+
+
+const MOBS_API_URL = 'https://684a4f1f165d05c5d35845a3.mockapi.io/api/v1/mobs_pasivos-neutrales'; 
+
+// Función para cargar los mobs desde la API
+async function loadMobs() {
+    const container = document.getElementById('mobsContainer');
+    container.innerHTML = '<p>Cargando mobs...</p>';
+
+    try {
+        const response = await fetch(MOBS_API_URL);
+        if (!response.ok) throw new Error("Error al cargar los datos");
+
+        const mobs = await response.json();
+
+        // Limpiar mensaje de carga
+        container.innerHTML = '';
+
+        // Generar tarjetas
+        mobs.forEach(mob => {
+            const card = document.createElement('div');
+            card.classList.add('mob-card');
+
+            card.innerHTML = `
+                <h3>${mob.name}</h3>
+                <p><strong>Tipo:</strong> ${mob.type}</p>
+                <p><strong>Salud:</strong> ${mob.health} HP</p>
+                <p><strong>Ubicación:</strong> ${mob.location} HP</p>
+                <p><strong>Descripción:</strong> ${mob.description}</p>
+            `;
+
+            container.appendChild(card);
+        });
+
+    } catch (error) {
+        container.innerHTML = `<p style="color:red;">No se pudieron cargar los mobs: ${error.message}</p>`;
+    }
+}
+
+// Llamar a la función cuando se cargue la página
+document.addEventListener("DOMContentLoaded", () => {
+    // El resto de tu código...
+
+    // Cargar mobs si estamos en la sección correspondiente
+    if (document.getElementById('mobsContainer')) {
+        loadMobs();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const biomeCards = document.querySelectorAll(".biome-card");
+
+  biomeCards.forEach(card => {
+      card.addEventListener("click", () => {
+          card.classList.toggle("flipped");
+      });
+  });
+});
+
+// Function to load biome cards
+async function loadBiomes() {
+  const container = document.getElementById('biomasContainer');
+  container.innerHTML = '<p>Cargando biomas...</p>';
+
+  try {
+
+      // Clear existing content
+      container.innerHTML = "";
+
+      // Loop through each biome and create a card
+      biomesData.forEach(biome => {
+          const card = document.createElement('div');
+          card.classList.add('biome-card');
+
+          card.innerHTML = `
+              <img src="${biome.image}" alt="${biome.name}">
+              <h3>${biome.name}</h3>
+              <p><strong>Temperatura:</strong> ${biome.temperature}</p>
+              <p><strong>Características:</strong> ${biome.features.join(", ")}</p>
+              <p>${biome.description}</p>
+          `;
+          container.appendChild(card);
+      });
+  } catch (error) {
+      container.innerHTML = `<p style="color:red">No se pudieron cargar los biomas: ${error.message}</p>`;
+  }
+}
+
+// Load biomes when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  loadBiomes();
+});

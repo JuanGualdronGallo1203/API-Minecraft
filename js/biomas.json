@@ -1,0 +1,232 @@
+{
+    "biomes": [
+        {
+            "name": "Plains",
+            "image": "https://example.com/images/plains.jpg",
+            "temperature": 0.8,
+            "features": [
+                "Pastos verdes",
+                "Árboles de roble",
+                "Caballos, vacas, ovejas",
+                "Lagos y riachuelos"
+            ],
+            "description": "Los llanos son biomas planos y abiertos, ideales para la agricultura y la ganadería."
+        },
+        {
+            "name": "Desert",
+            "image": "https://example.com/images/desert.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Dunas de arena",
+                "Cactus",
+                "Pocas criaturas: conejos y zorros del desierto",
+                "Oasis ocasionales"
+            ],
+            "description": "El desierto es un bioma cálido y seco, con muy poca vegetación y escasa fauna. Es ideal para la minería por la abundancia de recursos como el mineral de hierro."
+        },
+        {
+            "name": "Forest",
+            "image": "https://example.com/images/forest.jpg",
+            "temperature": 0.7,
+            "features": [
+                "Árboles de roble y abeto",
+                "Mucha vegetación y flores",
+                "Pandas, zorros, lobos",
+                "Bajo denso de árboles"
+            ],
+            "description": "El bosque es un bioma moderado, con una variedad de fauna y flora. Es ideal para la exploración y caza."
+        },
+        {
+            "name": "Savanna",
+            "image": "https://example.com/images/savanna.jpg",
+            "temperature": 1.2,
+            "features": [
+                "Árboles de acacia",
+                "Llanuras de hierba alta",
+                "Cebras y leones (en algunos mods)",
+                "Rara lluvia"
+            ],
+            "description": "La sabana es un bioma cálido y seco, con árboles de acacia y grandes extensiones de pastizales. Su clima cálido favorece a varios tipos de fauna."
+        },
+        {
+            "name": "Taiga",
+            "image": "https://example.com/images/taiga.jpg",
+            "temperature": -0.5,
+            "features": [
+                "Árboles de abeto y pino",
+                "Nevadas frecuentes",
+                "Osos polares, lobos, zorros",
+                "Bajo en vegetación"
+            ],
+            "description": "La taiga es un bioma frío, con grandes bosques de coníferas y nevadas frecuentes. Es hogar de varias criaturas adaptadas a climas fríos."
+        },
+        {
+            "name": "Swamp",
+            "image": "https://example.com/images/swamp.jpg",
+            "temperature": 0.8,
+            "features": [
+                "Lodo y agua estancada",
+                "Árboles de sauce",
+                "Ranas, slimes, murciélagos",
+                "Llantas de lirio y cañas de azúcar"
+            ],
+            "description": "El pantano es un bioma húmedo y pantanoso, con mucha agua estancada y vegetación baja. Es hogar de varias criaturas anfibias y algunos recursos únicos."
+        },
+        {
+            "name": "Jungle",
+            "image": "https://example.com/images/jungle.jpg",
+            "temperature": 1.0,
+            "features": [
+                "Árboles grandes de jungla",
+                "Vides y flores tropicales",
+                "Loros, tigres, monos (en mods)",
+                "Melones y caña de azúcar"
+            ],
+            "description": "La jungla es un bioma tropical, cálido y húmedo, con grandes árboles y una rica fauna. Es conocida por su densa vegetación y diversidad."
+        },
+        {
+            "name": "Mountain",
+            "image": "https://example.com/images/mountain.jpg",
+            "temperature": 0.2,
+            "features": [
+                "Cumbres nevadas",
+                "Rocas escarpadas",
+                "Caballos, cabras (en algunos mods)",
+                "Vegetación escasa"
+            ],
+            "description": "Las montañas son biomas elevados y difíciles de escalar, pero son ideales para los jugadores que buscan paisajes majestuosos. En ellos se pueden encontrar recursos raros."
+        },
+        {
+            "name": "Ice Spikes",
+            "image": "https://example.com/images/ice_spikes.jpg",
+            "temperature": -0.5,
+            "features": [
+                "Espigas de hielo",
+                "Nieve y hielo",
+                "Osos polares",
+                "Cero vegetación"
+            ],
+            "description": "El bioma de espigas de hielo es un lugar frío y escaso de vida, con impresionantes formaciones de hielo que lo hacen muy pintoresco."
+        },
+        {
+            "name": "Badlands",
+            "image": "https://example.com/images/badlands.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Montañas rojas y amarillas",
+                "Cactus y arbustos secos",
+                "Pocas criaturas",
+                "Paisajes áridos"
+            ],
+            "description": "Las malas tierras son un bioma árido y cálido, conocido por su suelo colorido y su escasa vegetación, pero rico en minerales."
+        },
+        {
+            "name": "Nether Wastes",
+            "image": "https://example.com/images/nether_wastes.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Lava",
+                "Rocas negras",
+                "Pocas estructuras",
+                "Zombis piglins y ghasts"
+            ],
+            "description": "El bioma de los desiertos del Nether está lleno de lava y un paisaje sombrío. Aquí habitan criaturas como los zombis piglins y los ghasts, además de encontrar algunas formaciones rocosas."
+        },
+        {
+            "name": "Soul Sand Valley",
+            "image": "https://example.com/images/soul_sand_valley.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Sombra oscura",
+                "Arena del alma",
+                "Restos de esqueletos",
+                "Enderman y ghasts"
+            ],
+            "description": "El Valle de la Arena del Alma es un bioma sombrío y aterrador, con mucha arena del alma que ralentiza el movimiento. La atmósfera oscura y los esqueletos antiguos lo hacen inquietante."
+        },
+        {
+            "name": "Crimson Forest",
+            "image": "https://example.com/images/crimson_forest.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Árboles rojos (Hongo del Crimson)",
+                "Luz tenue",
+                "Hoglins y Piglins",
+                "Raíces y vegetación roja"
+            ],
+            "description": "El Bosque Carmesí es un bioma con árboles rojos gigantes (de hongos del crimson), con una atmósfera única y peligrosa. Hoglins y Piglins son comunes aquí."
+        },
+        {
+            "name": "Warped Forest",
+            "image": "https://example.com/images/warped_forest.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Árboles verdes y azules",
+                "Luces misteriosas",
+                "Enderman y Piglins",
+                "Lluvias de esporas"
+            ],
+            "description": "El Bosque Azulado tiene un tono surrealista, con árboles de colores vibrantes. Es hogar de los Enderman y algunas criaturas hostiles, con una atmósfera extraña."
+        },
+        {
+            "name": "Basalt Deltas",
+            "image": "https://example.com/images/basalt_deltas.jpg",
+            "temperature": 2.0,
+            "features": [
+                "Rocas de basalto",
+                "Lava fluida",
+                "Magma Cubes",
+                "Formaciones volcánicas"
+            ],
+            "description": "El Delta de Basalto es un bioma volcánico lleno de lava y formaciones rocosas, donde los Magma Cubes son comunes y las temperaturas son extremadamente altas."
+        },
+        {
+            "name": "The End",
+            "image": "https://example.com/images/the_end.jpg",
+            "temperature": 0.0,
+            "features": [
+                "Islas flotantes",
+                "Endstone",
+                "Enderman",
+                "Portal al fin"
+            ],
+            "description": "El End es un bioma alienígena compuesto por islas flotantes de Endstone. Es hogar de los Enderman, y es donde se encuentra el Dragón del End, el último jefe del juego."
+        },
+        {
+            "name": "End Highlands",
+            "image": "https://example.com/images/end_highlands.jpg",
+            "temperature": 0.0,
+            "features": [
+                "Elevadas islas flotantes",
+                "Endstone y piedras end",
+                "Enderman",
+                "Raros paisajes"
+            ],
+            "description": "Las Highlands del End son grandes islas flotantes, más elevadas que las islas normales. Son conocidas por su paisaje surrealista y la presencia de Enderman."
+        },
+        {
+            "name": "End Midlands",
+            "image": "https://example.com/images/end_midlands.jpg",
+            "temperature": 0.0,
+            "features": [
+                "Islas medianas",
+                "Endstone y flora rara",
+                "Enderman",
+                "Paisajes de piedra"
+            ],
+            "description": "El bioma de los Midlands del End tiene islas flotantes de tamaño medio y paisajes únicos. Aquí habitan los Enderman y es común encontrar estructuras con recursos escasos."
+        },
+        {
+            "name": "End Barrens",
+            "image": "https://example.com/images/end_barrens.jpg",
+            "temperature": 0.0,
+            "features": [
+                "Islas pequeñas",
+                "Terreno árido",
+                "Escasa vegetación",
+                "Enderman"
+            ],
+            "description": "El bioma de las Llanuras del End es un lugar árido y vacío, compuesto por pequeñas islas flotantes. Su clima seco y su escasa vegetación lo hacen un lugar solitario."
+        }
+    ]
+}
