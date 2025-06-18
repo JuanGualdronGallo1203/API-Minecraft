@@ -107,39 +107,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Function to load biome cards
 async function loadBiomesFromJSON() {
-  const container = document.getElementById('biomasContainer');
-  container.innerHTML = '<p>Cargando biomas...</p>';
+    const container = document.getElementById('biomasContainer');
+    container.innerHTML = '<p>Cargando biomas...</p>';
 
-  try {
-      // Cargar el archivo JSON
-      const response = await fetch('/js/biomas.json'); // Ajusta la ruta según tu estructura de archivos
-      if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
+    try {
+        // Cargar el archivo JSON
+        const response = await fetch('/js/biomas.json'); // Ajusta la ruta según tu estructura de archivos
+        if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
 
-      const data = await response.json();
-      const biomes = data.biomes; // Acceder al array de biomas
+        const data = await response.json();
+        const biomes = data.biomes; // Acceder al array de biomas
 
-      container.innerHTML = ''; // Limpiar el contenedor antes de agregar las nuevas tarjetas
+        container.innerHTML = ''; // Limpiar el contenedor antes de agregar las nuevas tarjetas
 
-      // Iterar sobre cada biome y crear una tarjeta
-      biomes.forEach(biome => {
-          const card = document.createElement('div');
-          card.classList.add('card');
+        // Iterar sobre cada biome y crear una tarjeta
+        biomes.forEach(biome => {
+            const card = document.createElement('div');
+            card.classList.add('card');
 
-          // Construir el contenido de la tarjeta
-          card.innerHTML = `
-              <img src="${biome.image}" alt="${biome.name}">
-              <h3>${biome.name}</h3>
-              <p><strong>Temperatura:</strong> ${biome.temperature}</p>
-              <p><strong>Características:</strong> ${biome.features.join(', ')}</p>
-              <p>${biome.description}</p>
-          `;
+            // Construir el contenido de la tarjeta
+            card.innerHTML = `
+                <img src="${biome.image}" alt="${biome.name}">
+                <h3>${biome.name}</h3>
+                <p><strong>Temperatura:</strong> ${biome.temperature}</p>
+                <p><strong>Características:</strong> ${biome.features.join(', ')}</p>
+                <p>${biome.description}</p>
+            `;
 
-          // Agregar la tarjeta al contenedor
-          container.appendChild(card);
-      });
+            // Agregar la tarjeta al contenedor
+            container.appendChild(card);
+        });
 
-  } catch (error) {
-      container.innerHTML = `<p style="color:red;">Error cargando biomas: ${error.message}</p>`;
-  }
+    } catch (error) {
+        container.innerHTML = `<p style="color:red;">Error cargando biomas: ${error.message}</p>`;
+    }
 }
+
+// Llamar a la función cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+    loadBiomesFromJSON();
+});
+
 

@@ -252,13 +252,13 @@ hr-items {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     animation: aumentarColor 0.8s forwards; 
 }
 
 @keyframes aumentarColor{
     0% {background-color: rgba(255, 255, 255, 0.123);}
-    100% {background-color: rgba(255, 255, 255, 0.726);}
+    100% {background-color: rgb(117, 104, 104);}
 }
 
 .card-image {
@@ -433,7 +433,7 @@ hr-items {
 }
 
 .biome-card {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(192, 169, 169, 0.8);
     border-radius: 6px;
     padding: 15px;
     margin: 20px;
@@ -465,12 +465,12 @@ hr-items {
 }
 
 .card{
-    background-color: #ccd4d2;
+    background-color: #87918e;
 }
 
 
 .card img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 150%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto;    /* Mantén la proporción de aspecto de la imagen */
     border-radius: 8px; /* Redondea los bordes de la imagen */
     margin-bottom: 15px; /* Espacio debajo de la imagen */
@@ -478,8 +478,50 @@ hr-items {
 
 /* Si deseas un tamaño fijo para todas las imágenes */
 .card img {
-    width: 200px; /* Ancho fijo */
+    width: 250px; /* Ancho fijo */
     height: 150px; /* Altura fija */
     object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsionarla */
     object-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 8px;
+    }
+
+    .menu li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+
+    .items-grid, .mobs-container {
+        grid-template-columns: 1fr;
+    }
+
+    .world-title, .mod-title {
+        font-size: 1.5rem;
+    }
+
+    .world-description, .mod-description {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .img-contenedor img {
+        max-height: 60vh;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .card-image, .biome-card img, .mod-image, .world-image {
+        max-height: 120px;
+    }
+
+    
 }
