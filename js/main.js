@@ -1,54 +1,54 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll("nav ul li a");
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
 
-  // Altura de la barra de navegación
-  const navbarHeight = document.querySelector("nav")?.offsetHeight || 60;
+    // Altura de la barra de navegación
+    const navbarHeight = document.querySelector("nav")?.offsetHeight || 60;
 
-  function highlightActiveLink() {
-    let currentSection = "";
+    function highlightActiveLink() {
+        let currentSection = "";
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - navbarHeight;
-      const sectionHeight = section.clientHeight;
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - navbarHeight;
+            const sectionHeight = section.clientHeight;
 
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        currentSection = section.id;
-      }
-    });
-
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentSection}`) {
-        link.classList.add("active");
-      }
-    });
-  }
-
-  // Scroll suave al hacer clic en enlaces
-  navLinks.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href");
-      const targetSection = document.querySelector(targetId);
-
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop - navbarHeight,
-          behavior: "smooth"
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                currentSection = section.id;
+            }
         });
-      }
-    });
-  });
 
-  window.addEventListener("scroll", highlightActiveLink);
-  highlightActiveLink(); // Ejecutar al cargar
-  window.scrollTo(0, 0);  // Forzar scroll al inicio
+        navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${currentSection}`) {
+                link.classList.add("active");
+            }
+        });
+    }
+
+    // Scroll suave al hacer clic en enlaces
+    navLinks.forEach(link => {
+        link.addEventListener("click", e => {
+            e.preventDefault();
+            const targetId = link.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - navbarHeight,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    window.addEventListener("scroll", highlightActiveLink);
+    highlightActiveLink(); // Ejecutar al cargar
+    window.scrollTo(0, 0);  // Forzar scroll al inicio
 });
 
 
 
-const MOBS_API_URL = 'https://684a4f1f165d05c5d35845a3.mockapi.io/api/v1/mobs_pasivos-neutrales'; 
+const MOBS_API_URL = 'https://684a4f1f165d05c5d35845a3.mockapi.io/api/v1/mobs_pasivos-neutrales';
 
 // Función para cargar los mobs desde la API
 async function loadMobs() {
@@ -96,13 +96,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const biomeCards = document.querySelectorAll(".biome-card");
+    const biomeCards = document.querySelectorAll(".biome-card");
 
-  biomeCards.forEach(card => {
-      card.addEventListener("click", () => {
-          card.classList.toggle("flipped");
-      });
-  });
+    biomeCards.forEach(card => {
+        card.addEventListener("click", () => {
+            card.classList.toggle("flipped");
+        });
+    });
 });
 
 // Function to load biome cards
@@ -112,7 +112,7 @@ async function loadBiomesFromJSON() {
 
     try {
         // Cargar el archivo JSON
-        const response = await fetch('/js/biomas.json'); // Ajusta la ruta según tu estructura de archivos
+        const response = await fetch('./biomas.json'); // Ajusta la ruta según tu estructura de archivos
         if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
 
         const data = await response.json();
